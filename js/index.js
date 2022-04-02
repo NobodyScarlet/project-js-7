@@ -6,7 +6,7 @@ const operation = prompt ('What do you want: add, sub, mult, div?');
 const firstNumber = +prompt ('First number');
 const secondNumber = +prompt ('Second number');
 
-switch (operation) {
+switch (operation.toLowerCase().trim()) {
     case "add":
         alert(`${firstNumber} + ${secondNumber} = ${firstNumber + secondNumber}`);
         break;
@@ -18,5 +18,8 @@ switch (operation) {
         break;
     case "div":
         alert(`${firstNumber} / ${secondNumber} = ${firstNumber / secondNumber}`);
+        break;
+    default:
+        alert('Unknown operation!');
         break;
 }
