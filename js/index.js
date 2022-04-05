@@ -1,6 +1,5 @@
 'use strict';
 
-// Task 2
 
 const operation = prompt ('What do you want: add, sub, mult, div?');
 const firstNumber = +prompt ('First number');
